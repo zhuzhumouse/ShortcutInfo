@@ -1,0 +1,2 @@
+# ShortcutInfo
+ShortcutManager requestPinShortcut 
