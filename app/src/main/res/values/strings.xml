@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Shortcut</string>
+    <string name="shotcut_title">shotcut</string>
+    <string name="create_shortcut">使用就方式创建快键键</string>
+    <string name="create_second_shortcut">静态shortcut的跳转页面</string>
+    <string name="create_shortcut_activity">我是一个可以自动创建shortcut的Activity</string>
+    <string name="third">静态shortcut2的跳转页面</string>
+    <string name="static_shortcut_disabled_message">无效静态快捷键</string>
+    <string name="static_shortcut_long_label">静态shortcut</string>
+    <string name="static_shortcut_short_label">静态shortcut-长标题</string>
+    <string name="static_shortcut_disabled_message2">无效静态快捷键2</string>
+    <string name="static_shortcut_long_label2">静态shortcut2</string>
+    <string name="static_shortcut_short_label2">静态shortcut2-长标题</string>
+    <string name="resort_shortcut">重新排序动态快捷键</string>
+    <string name="create_shortcut_new">使用新方式创建快捷键</string>
+</resources>

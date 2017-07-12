@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chulili.shortcut">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <activity android:name=".SecondAcitivity"/>
+        <activity android:name=".CallbackActivity"/>
+        <activity android:name=".CreateShortcutActivity"
+            android:theme="@style/Base.AlertDialog.AppCompat">
+            <intent-filter>
+                <!-- 长按桌面，点击微件 -->
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ThirdActivity"/>
+
+        <receiver android:name=".ShortcutCallbackReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.callback"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+    <!-- 指定添加安装快捷方式的权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+</manifest>

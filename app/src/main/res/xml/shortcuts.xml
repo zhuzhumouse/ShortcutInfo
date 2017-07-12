@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutDisabledMessage="@string/static_shortcut_disabled_message"
+        android:shortcutId="static"
+        android:shortcutLongLabel="@string/static_shortcut_long_label"
+        android:shortcutShortLabel="@string/static_shortcut_short_label">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.example.chulili.shortcut.SecondAcitivity"
+            android:targetPackage="com.example.chulili.shortcut" />
+        <!--<intent-->
+            <!--android:action="android.intent.action.VIEW"-->
+            <!--android:targetClass="com.example.chulili.shortcut.CreateShortcutActivity"-->
+            <!--android:targetPackage="com.example.chulili.shortcut" />-->
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutDisabledMessage="@string/static_shortcut_disabled_message2"
+        android:shortcutId="static2"
+        android:shortcutLongLabel="@string/static_shortcut_long_label2"
+        android:shortcutShortLabel="@string/static_shortcut_short_label2">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.example.chulili.shortcut.ThirdActivity"
+            android:targetPackage="com.example.chulili.shortcut" />
+    </shortcut>
+</shortcuts>
